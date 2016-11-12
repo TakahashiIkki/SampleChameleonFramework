@@ -12,9 +12,13 @@
 		9A2F10E51DD6EA670055B862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F10E31DD6EA670055B862 /* Main.storyboard */; };
 		9A2F10E71DD6EA670055B862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F10E61DD6EA670055B862 /* Assets.xcassets */; };
 		9A2F10EA1DD6EA670055B862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F10E81DD6EA670055B862 /* LaunchScreen.storyboard */; };
+		CAF891ADC162E375FB0E0CEF /* Pods_SampleChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DC9ACF5CFA5A2285E89AB4 /* Pods_SampleChameleonFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53DC9ACF5CFA5A2285E89AB4 /* Pods_SampleChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7215B034B795265D5821CFAE /* Pods-SampleChameleonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleChameleonFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleChameleonFramework/Pods-SampleChameleonFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF991704281DBD7F3D4CF16 /* Pods-SampleChameleonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleChameleonFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleChameleonFramework/Pods-SampleChameleonFramework.release.xcconfig"; sourceTree = "<group>"; };
 		9A2F10DC1DD6EA670055B862 /* SampleChameleonFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleChameleonFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2F10DF1DD6EA670055B862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A2F10E11DD6EA670055B862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF891ADC162E375FB0E0CEF /* Pods_SampleChameleonFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797A8577CB7BA3033A44964B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53DC9ACF5CFA5A2285E89AB4 /* Pods_SampleChameleonFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A2F10D31DD6EA670055B862 = {
 			isa = PBXGroup;
 			children = (
 				9A2F10DE1DD6EA670055B862 /* SampleChameleonFramework */,
 				9A2F10DD1DD6EA670055B862 /* Products */,
+				FAF035C3B45ECB05FD8C0A3A /* Pods */,
+				797A8577CB7BA3033A44964B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = SampleChameleonFramework;
 			sourceTree = "<group>";
 		};
+		FAF035C3B45ECB05FD8C0A3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7215B034B795265D5821CFAE /* Pods-SampleChameleonFramework.debug.xcconfig */,
+				7FF991704281DBD7F3D4CF16 /* Pods-SampleChameleonFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2F10EE1DD6EA670055B862 /* Build configuration list for PBXNativeTarget "SampleChameleonFramework" */;
 			buildPhases = (
+				AC7263EBD2F09AD4D28E6DAF /* [CP] Check Pods Manifest.lock */,
 				9A2F10D81DD6EA670055B862 /* Sources */,
 				9A2F10D91DD6EA670055B862 /* Frameworks */,
 				9A2F10DA1DD6EA670055B862 /* Resources */,
+				16165883E9AF7F9AC17F661D /* [CP] Embed Pods Frameworks */,
+				2C8AB54A3814FE1266BEC909 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16165883E9AF7F9AC17F661D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleChameleonFramework/Pods-SampleChameleonFramework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8AB54A3814FE1266BEC909 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleChameleonFramework/Pods-SampleChameleonFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC7263EBD2F09AD4D28E6DAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A2F10D81DD6EA670055B862 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		9A2F10EF1DD6EA670055B862 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7215B034B795265D5821CFAE /* Pods-SampleChameleonFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68682W8R4T;
@@ -270,6 +346,7 @@
 		};
 		9A2F10F01DD6EA670055B862 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF991704281DBD7F3D4CF16 /* Pods-SampleChameleonFramework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68682W8R4T;
